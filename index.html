@@ -9,19 +9,20 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #fdfbff;
+      background-color: #fff8f0;
       color: #333;
     }
     header {
-      background-color: #fff;
+      background-color: #fff3e0;
       padding: 1rem 2rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      color: #8e44ad;
+      color: #e67e22;
       margin: 0;
+      font-size: 3rem;
     }
     nav {
       text-align: center;
@@ -29,18 +30,18 @@
     }
     nav a {
       text-decoration: none;
-      color: #8e44ad;
+      color: #d35400;
       margin: 0 1rem;
       font-weight: bold;
     }
     .hero {
-      background: linear-gradient(to right, #f8e1ff, #e0c3fc);
+      background: linear-gradient(to right, #ffe0b2, #ffd180);
       padding: 2rem;
       text-align: center;
     }
     .hero h2 {
       font-size: 2rem;
-      color: #6c3483;
+      color: #d35400;
     }
     .products {
       display: grid;
@@ -60,14 +61,14 @@
       border-radius: 8px;
     }
     .product h3 {
-      color: #6c3483;
+      color: #e67e22;
       margin-top: 0.5rem;
     }
     .product p {
       font-size: 0.9rem;
     }
     .product button {
-      background-color: #8e44ad;
+      background-color: #e67e22;
       color: #fff;
       border: none;
       padding: 0.5rem 1rem;
@@ -78,13 +79,13 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: #f2e9f8;
+      background: #ffe0b2;
       font-size: 0.9rem;
     }
   </style>
   <script>
     function enviarPedido(producto) {
-      const telefono = '521999547720'; // Reemplaza con tu número de WhatsApp
+      const telefono = '521999547720'; // Reemplaza con tu nÃºmero de WhatsApp
       const mensaje = `Hola, quiero pedir el producto: ${producto}`;
       const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
       window.open(url, '_blank');
@@ -97,12 +98,12 @@
     <nav>
       <a href="#productos">Productos</a>
       <a href="#contacto">Contacto</a>
-      <a href="#catalogo">Catálogo</a>
+      <a href="#catalogo">CatÃ¡logo</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Productos frescos y de calidad para tu hogar</h2>
+    <h2>Â¡Del antojo al carrito! Encuentra tus botanas, pasteles y mÃ¡s aquÃ­</h2>
     <p>Compra lo que necesitas desde la comodidad de tu casa.</p>
   </section>
 
@@ -110,25 +111,25 @@
     <div class="product">
       <img src="https://via.placeholder.com/200" alt="Arroz 1kg" />
       <h3>Arroz 1kg</h3>
-      <p>Grano largo, ideal para acompañar tus comidas.</p>
+      <p>Grano largo, ideal para acompaÃ±ar tus comidas.</p>
       <button onclick="enviarPedido('Arroz 1kg')">Comprar</button>
     </div>
     <div class="product">
       <img src="https://via.placeholder.com/200" alt="Aceite vegetal 1L" />
       <h3>Aceite vegetal 1L</h3>
-      <p>Perfecto para freír y cocinar con sabor.</p>
+      <p>Perfecto para freÃ­r y cocinar con sabor.</p>
       <button onclick="enviarPedido('Aceite vegetal 1L')">Comprar</button>
     </div>
     <div class="product">
       <img src="https://via.placeholder.com/200" alt="Frijol negro 500g" />
       <h3>Frijol negro 500g</h3>
-      <p>Rico en proteínas y sabor tradicional.</p>
+      <p>Rico en proteÃ­nas y sabor tradicional.</p>
       <button onclick="enviarPedido('Frijol negro 500g')">Comprar</button>
     </div>
   </section>
 
   <footer id="contacto">
-    <p>© 2025 Tienda de Abarrotes Online | contacto@abarrotesonline.com</p>
+    <p>Â© 2025 Tienda de Abarrotes Online | contacto@abarrotesonline.com</p>
   </footer>
 </body>
 </html>
